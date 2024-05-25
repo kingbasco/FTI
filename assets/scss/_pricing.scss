@@ -1,0 +1,62 @@
+/* 17. pricing */
+.pricing-area{
+    background-size: cover;
+    background-position: center center;
+}
+.price-middle {
+	-ms-flex: 0 0 33.333333%;
+	flex: 0 0 30.333%;
+	max-width: 30.333%;
+}
+.pricing-wrapper {
+    background: $white;
+    padding: 40px;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.price-middle .pricing-wrapper {
+    padding: 45px 50px 55px;
+    box-shadow: 0px 0px 29.7px 0.3px rgba(221, 221, 221, 0.82);
+}
+.price-count h1 {
+	font-size: 30px;
+	color: $theme-color;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: -.3px;
+	margin-bottom: 0;
+}
+.price-count span {
+	font-size: 16px;
+	color: $body-text-color;
+	font-weight: 600;
+}
+.price-count h1 span.usd {
+	font-size: 15px;
+	font-weight: 700;
+	color: $theme-color;
+	position: relative;
+}
+.pricing-text h3 {
+	font-size: 20px;
+	margin-bottom: 7px;
+}
+.pricing-list {
+	margin-top: 26px;
+	margin-bottom: 32px;
+}
+.pricing-list li {
+	color: $body-text-color;
+	font-size: 16px;
+	font-weight: 500;
+	padding-bottom: 13px;
+}
+.pricing-list li:last-child{padding-bottom:0;}
+.pricing-list li i {
+	margin-right: 6px;
+}
+.pricing-button a.btn {
+    padding: 16px 32px 16px 29px;
+}
+
+  

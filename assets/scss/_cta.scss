@@ -1,0 +1,28 @@
+/* 5. cta */
+.cta-area {
+	background-size: cover;
+	background-position: center center;
+}
+.cta-text{
+    & > span{
+        font-size: 24px;
+        font-weight: 700;
+        border-bottom: 1px solid $white;
+        color:$white;
+    }
+    & h1{
+        font-size: 60px;
+        color:$white;
+        letter-spacing: -0.3px;
+        line-height: 1.08;
+        margin-top: 32px;
+        margin-bottom: 37px;
+    }
+    & p{
+        font-size: 18px;
+        line-height: 30px;
+        color:$white;
+        padding: 0 50px;
+    	margin-bottom: 36px;
+    }
+}

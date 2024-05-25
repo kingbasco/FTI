@@ -1,0 +1,112 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 08/02/2020 05:10
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-box:before { content: "\f100"; }
+.flaticon-trolley:before { content: "\f101"; }
+.flaticon-package:before { content: "\f102"; }
+.flaticon-delivery-truck:before { content: "\f103"; }
+.flaticon-plane:before { content: "\f104"; }
+.flaticon-plane-1:before { content: "\f105"; }
+.flaticon-ship:before { content: "\f106"; }
+.flaticon-ship-1:before { content: "\f107"; }
+.flaticon-logistic:before { content: "\f108"; }
+.flaticon-forklift:before { content: "\f109"; }
+.flaticon-truck-1:before { content: "\f10a"; }
+.flaticon-aircraft:before { content: "\f10b"; }
+.flaticon-boat:before { content: "\f10c"; }
+.flaticon-travel:before { content: "\f10d"; }
+.flaticon-vessel:before { content: "\f10e"; }
+.flaticon-delivery-truck-1:before { content: "\f10f"; }
+.flaticon-delivery:before { content: "\f110"; }
+.flaticon-box-1:before { content: "\f111"; }
+.flaticon-mail:before { content: "\f112"; }
+.flaticon-box-2:before { content: "\f113"; }
+.flaticon-scooter:before { content: "\f114"; }
+.flaticon-boat-1:before { content: "\f115"; }
+.flaticon-progress:before { content: "\f116"; }
+.flaticon-email:before { content: "\f117"; }
+.flaticon-train:before { content: "\f118"; }
+.flaticon-rocket-launch:before { content: "\f119"; }
+.flaticon-delivery-1:before { content: "\f11a"; }
+.flaticon-product:before { content: "\f11b"; }
+.flaticon-product-1:before { content: "\f11c"; }
+.flaticon-box-3:before { content: "\f11d"; }
+.flaticon-help:before { content: "\f11e"; }
+.flaticon-yatch:before { content: "\f11f"; }
+.flaticon-delivery-2:before { content: "\f120"; }
+.flaticon-plane-2:before { content: "\f121"; }
+.flaticon-global:before { content: "\f122"; }
+.flaticon-luggage:before { content: "\f123"; }
+    
+    $font-Flaticon-box: "\f100";
+    $font-Flaticon-trolley: "\f101";
+    $font-Flaticon-package: "\f102";
+    $font-Flaticon-delivery-truck: "\f103";
+    $font-Flaticon-plane: "\f104";
+    $font-Flaticon-plane-1: "\f105";
+    $font-Flaticon-ship: "\f106";
+    $font-Flaticon-ship-1: "\f107";
+    $font-Flaticon-logistic: "\f108";
+    $font-Flaticon-forklift: "\f109";
+    $font-Flaticon-truck-1: "\f10a";
+    $font-Flaticon-aircraft: "\f10b";
+    $font-Flaticon-boat: "\f10c";
+    $font-Flaticon-travel: "\f10d";
+    $font-Flaticon-vessel: "\f10e";
+    $font-Flaticon-delivery-truck-1: "\f10f";
+    $font-Flaticon-delivery: "\f110";
+    $font-Flaticon-box-1: "\f111";
+    $font-Flaticon-mail: "\f112";
+    $font-Flaticon-box-2: "\f113";
+    $font-Flaticon-scooter: "\f114";
+    $font-Flaticon-boat-1: "\f115";
+    $font-Flaticon-progress: "\f116";
+    $font-Flaticon-email: "\f117";
+    $font-Flaticon-train: "\f118";
+    $font-Flaticon-rocket-launch: "\f119";
+    $font-Flaticon-delivery-1: "\f11a";
+    $font-Flaticon-product: "\f11b";
+    $font-Flaticon-product-1: "\f11c";
+    $font-Flaticon-box-3: "\f11d";
+    $font-Flaticon-help: "\f11e";
+    $font-Flaticon-yatch: "\f11f";
+    $font-Flaticon-delivery-2: "\f120";
+    $font-Flaticon-plane-2: "\f121";
+    $font-Flaticon-global: "\f122";
+    $font-Flaticon-luggage: "\f123";

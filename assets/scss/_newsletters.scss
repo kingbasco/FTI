@@ -1,0 +1,80 @@
+/* 10. newsletters */
+.newsletters-area {
+	background-size: cover;
+	background-position: bottom right;
+}
+.single-newsletters{
+	margin-right: 70px;
+}
+.news-box {
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "\f2b6";
+      font-family: "Font Awesome 5 Pro";
+      display: inline-block;
+      font-size: 18px;
+      text-align: center;
+      right: 40px;
+      color: $theme-color;
+      top: 25px;
+    }
+  }
+.newsletter-form  form {
+    position: relative;
+  }
+.newsletter-form form input {
+    height: 80px;
+    padding: 0 40px;
+    background: $white;
+    color: $body-text-color;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
+  .newsletter-form form input::placeholder {
+      color: $body-text-color;
+      font-size: 18px;
+      font-weight: 400;
+  }
+  .newsletter-form form::-moz-placeholder {
+      color: $body-text-color;
+      font-size: 18px;
+      font-weight: 400;
+  }
+.newsletter-form form button.btn{
+  margin-top: 15px;
+}
+
+// .newsletters-02
+.single-02-newsletters {
+	margin-right: 36px;
+	margin-left: 30px;
+}
+.single-02-newsletters .newsletter-form form input{
+  padding: 0 65px;
+}
+.single-02-newsletters .news-box::before {
+	left: 30px;
+	right: auto;
+}
+.single-02-newsletters .newsletter-form form button {
+	position: absolute;
+	right: 0;
+	background-image: -moz-linear-gradient(-51deg, #86D10B 0%, #0B6607 99%);
+	background-image: -webkit-linear-gradient(-51deg, #86D10B 0%, #0B6607 99%);
+	background-image: -ms-linear-gradient(-51deg, #86D10B 0%, #0B6607 99%);
+	top: 0;
+	font-size: 30px;
+	color: #fff;
+	border: none;
+	padding: 25px;
+	line-height: 1;
+	border-radius: 10px;
+}
+.newsletters-shape-img {
+	position: absolute;
+	bottom: 0;
+	left: 120px;
+}

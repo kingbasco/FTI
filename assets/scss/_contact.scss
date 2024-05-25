@@ -1,0 +1,111 @@
+/* 14. contact */
+.contact-us-area {
+	background-size: cover;
+	background-position: center center;
+	margin-left: 205px;
+	margin-right: 205px;
+	border-top: 4px solid $theme-color;
+	margin-top: -100px;
+	position: relative;
+}
+.contact-map {
+	min-height: 750px;
+}
+.single-contact-us{
+    margin-right: 30px;
+    overflow: hidden;
+}
+.contact-us-list {
+	overflow: hidden;
+    margin-bottom: 38px;
+    &:last-child{margin-bottom: 0;}
+}
+.contact-us-text{
+    overflow: hidden;
+    text-align: right;
+    & span{
+        color:$body-text-color;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    & h4{
+        font-size: 22px;
+        font-weight: 600;
+        color:#efefef;
+        margin-bottom:0;
+        margin-top: 0;
+        line-height: 1.3;
+    }
+}
+.contact-us-icon{
+    border: 3px dashed #686868;
+    padding: 6px;
+    border-radius: 50%;
+    margin-left: 18px;
+       & i{
+        background: $theme-color;
+        height: 45px;
+        width: 45px;
+        font-size: 18px;
+        color: $white;
+        line-height: 45px;
+        text-align: center;
+        border-radius: 50%;
+       } 
+}
+#contact-form  input {
+	border: 0;
+	border-bottom: 2px solid #595959;
+	width: 100%;
+    height: 50px;
+    background: none;
+    font-size: 18px;
+    font-weight: 600;
+    color:$white;
+    padding:0 20px;
+    text-transform: capitalize;
+}
+#contact-form  input:focus{border-color:$white;}
+#contact-form textarea {
+	border: 0;
+	border-bottom: 2px solid #595959;
+	height: 110px;
+    width: 100%;
+    background: none;
+    font-size: 18px;
+    font-weight: 600;
+    color:$white;
+    padding:0 20px;
+    text-transform: capitalize;
+}
+#contact-form  textarea:focus{border-color:$white;}
+#contact-form input::-moz-placeholder, #contact-form textarea::placeholder {
+    color: $white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.form-2-box{position: relative;}
+.form-2-box::after {
+	position: absolute;
+	content: "\f007";
+	font-family: "Font Awesome 5 Pro";
+	display: inline-block;
+	font-size: 18px;
+	text-align: center;
+	right: 20px;
+	color: $theme-color;
+	top: 14px;
+}
+.email-2-icon:after{
+	content: "\f2b6";
+} 
+.phone-2-icon:after{
+	content: "\f095";
+} 
+.subject-2-icon:after{
+	content: "\f107";
+} 
+.message-2-icon:after{
+	content: "\f040";
+} 

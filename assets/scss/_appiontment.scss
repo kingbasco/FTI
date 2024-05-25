@@ -1,0 +1,150 @@
+/* 12. footer */
+.appiontment-area {
+	background-position: bottom left;
+	background-repeat: no-repeat;
+}
+.app-wrapper {
+	margin-left: 206px;
+}
+.appiontment-form input {
+    background: $white;
+    height: 80px;
+    width: 100%;
+    padding-left: 30px;
+    border: 0;
+    color: $black;
+    border: 2px solid #eeeeee;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 0;
+    font-weight: 600; 
+    font-family: $poppins;
+    transition: .3s;
+} 
+.appiontment-form input:focus{border: 2px solid $theme-color;}
+.appiontment-form input::-moz-placeholder, .appiontment-form input::placeholder {
+    color: $black;
+    font-weight: 600;
+    font-size: 16px;
+}
+  .form-box {
+    position: relative;
+ }
+  .form-box::after {
+    position: absolute;
+    content: "\f007";
+    font-family: "Font Awesome 5 Pro";
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    right: 28px;
+    color: $theme-color;
+    top: 27px; 
+}
+.email-icon::after {
+	content: "\f095";
+}
+.pro-filter {
+    position: relative; 
+}
+.pro-filter select {
+    background: $white;
+    height: 80px;
+    width: 100%;
+    padding-left: 30px;
+    border: 0;
+    color: $black;
+    border: 2px solid #eeeeee;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    appearance: none;
+    -moz-appearance: none; 
+    font-family: $poppins;
+}
+.pro-filter::before {
+    content: "\f107";
+    position: absolute;
+    font-family: "Font Awesome 5 Pro";
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    right: 28px;
+    color: $theme-color;
+    top: 27px;  
+}
+// appiontment-02
+.appiontment-02-area {
+	background-size: cover;
+	background-position: center center;
+}
+.single-appiontment {
+	margin-top: 130px;
+}
+.appiontment-02-wrapper {
+	background: $white;
+	margin-right: 30px;
+	padding: 60px 70px 65px 70px;
+}
+.appiontment-text p {
+	font-size: 18px;
+	font-weight: 500;
+	color: $white;
+	margin-bottom: 34px;
+}
+.appiontment-tab {
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 16px; 
+    & ul{
+        & li{
+            position: relative; 
+            & a{
+                transition: 0.3s;
+                margin: 0;
+                margin-right: 0px;
+                color: $black;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 0;
+                margin-right: 45px;
+                position: relative;
+                letter-spacing: -.3px;
+                font-family: $poppins;
+                transition: .3s;
+                &::before{
+                    background: $theme-color;
+                    position: absolute;
+                    bottom: 0;
+                    content: "";
+                    left: 0;
+                    height: 2px;
+                    width: 100%;
+                    bottom: -17px;
+                    transition: .3s;
+                    opacity: 0; 
+                }
+                &:hover::before{
+                    opacity: 1;
+                }
+                &:hover{
+                    color: $theme-color;
+                    border-color: $theme-color;
+                }
+                &.active{
+                    color: $theme-color;
+                }
+                
+            }
+        }
+    }
+}
+.appiontment-tab ul li a.active::before {
+    opacity: 1;
+ }
+.appiontment-tab ul li:last-child a{
+    margin-right: 0;
+ }
+
+
+
+

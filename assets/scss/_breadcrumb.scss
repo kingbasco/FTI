@@ -1,0 +1,49 @@
+.breadcrumb-area {
+    background-position: center center;
+    background-size: cover; 
+}
+  
+  .breadcrumb-text {
+    position: relative;
+    z-index: 1; }
+  
+    .breadcrumb-text > h1 {
+      font-size: 120px;
+      margin-bottom: 12px;
+      text-transform: capitalize;
+      line-height: 1;
+      color: #ffffff;
+    }
+    .breadcrumb-menu li {
+        display: inline-block;
+        position: relative;
+        padding: 0 35px;
+    }
+  
+  .breadcrumb-menu li a {
+    color: $theme-color;
+    font-size: 30px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+    font-weight: 500; }
+  
+    .breadcrumb-menu li::before {
+        content: "\f101";
+        display: inline-block;
+        padding-bottom: 0;
+        position: absolute;
+        top: 3px;
+        left: -11px;
+        font-family: "Font Awesome 5 Pro";
+        color: #fff;
+        font-size: 30px;
+    }
+  
+  .breadcrumb-menu li:first-child::before {
+    display: none; }
+  
+  .breadcrumb-menu span {
+    color: $white;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 500; }

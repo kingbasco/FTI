@@ -1,0 +1,66 @@
+.career-wrapper{
+    border-top: 4px solid $theme-color;
+    padding: 40px 20px 40px 40px;
+    box-shadow: 0px 0px 29.7px 0.3px rgba(226, 226, 226, 0.78);
+}
+.career-text{
+    & span{
+        background-color: #ffefe7;
+        color:$theme-color;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 6px 11px;
+        border-radius: 5px;
+        line-height: 1;
+    }
+    & h3{
+        font-size: 24px;
+        margin-top: 21px;
+        margin-bottom: 13px;
+    }
+    & p{
+       font-size: 16px;
+       line-height: 26px; 
+       margin-bottom: 24px;
+    }
+}
+.career-text a.btn {
+	padding: 16px 32px 16px 29px;
+    background: #fff2ed;
+    color:$theme-color;
+    transition: .3s;
+    transform: translateY(0);
+    &:hover{
+        background-image: -moz-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+        background-image: -webkit-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+        background-image: -ms-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+        color: $white;
+    }
+}
+// cta
+.career-cta-area{
+    background-size: cover;
+    background-position: center center;
+}
+.career-cta-wrapper{
+    background-image: -moz-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+    background-image: -webkit-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+    background-image: -ms-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+    padding: 70px 60px 80px 60px;
+    margin-right: 20px;
+    margin-left: 80px;
+    
+}
+.career-cta-text{
+    & h2{
+        font-size: 50px;
+        color: $white;
+        margin-bottom: 23px;
+    }
+    & p{
+        color:$white;
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-bottom: 35px;
+    }
+}

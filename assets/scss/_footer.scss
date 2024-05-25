@@ -1,0 +1,183 @@
+
+/* 11. footer */
+.footer-middle-area{border-top:2px solid #414141;}
+.header-address-icon{
+    & i{
+        font-size: 30px;
+        color:$theme-color;
+    }
+}
+.header-address-text{
+    & h4{
+        color:$white;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1;
+        margin-top: 15px;
+    }
+}
+.footer-title {
+	font-size: 20px;
+    color: $white;
+    margin-bottom: 22px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 23px;
+    &::before {
+        height: 3px;
+        width: 45px;
+        background: $theme-color;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: .3s;
+    }
+}
+.footer-link{
+    & ul{
+        & li{
+            padding-bottom: 12px;
+            &:last-child{padding-bottom: 0;}
+            & a{
+                color:#d4d4d4;
+                font-size: 14px;
+                font-weight: 400;
+                transition: .3s;
+                &:hover{color:$theme-color;border-bottom: 1px solid $theme-color;}
+            }
+        }
+    }
+}
+.contact-link li {
+	margin-bottom: 19px;
+	&:last-child{margin-bottom:0;}
+}
+.contact-address-icon {
+	float: left;
+	margin-right: 15px;
+	& i{
+		font-size: 20px;
+		color: $theme-color;
+		position: relative;
+		top: 4px;
+    }
+}
+.contact-address-text {
+	overflow: hidden;
+	& span{
+		font-size: 18px;
+        color: #d4d4d4;
+        font-weight: 500;
+    }
+}
+.footer-text p {
+	color: #d4d4d4;
+	margin-bottom: 22px;
+	line-height: 25px;
+}
+.footer-icon{
+    & a{
+    color: #9f9f9f;
+	font-size: 14px;
+	display: inline-block;
+	text-align: center;
+	transition: .3s;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	border: 2px solid #9f9f9f;
+	border-radius: 50%;
+    margin-right: 5px;
+    &:hover{
+        color:$white;
+        background-image: -moz-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+        background-image: -webkit-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+        background-image: -ms-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+        border-color:$theme-color;
+     }
+    }
+}
+.copyright p {
+    margin-bottom: 0; 
+    color:#d4d4d4;
+    & a{
+        color:$theme-color;
+    }
+}
+// footer-2
+.footer-gallery-img{
+    overflow: hidden;
+    & > a{
+        & img{
+            width:100%;
+        }
+    }
+    &::before {
+        background-image: -moz-linear-gradient( -51deg, rgba(235,18,10,0.8) 0%, rgba(245,57,15,0.8) 51%, rgba(255,94,20,0.8) 99%, rgb(255,94,20) 100%);
+        background-image: -webkit-linear-gradient( -51deg, rgba(235,18,10,0.8) 0%, rgba(245,57,15,0.8) 51%, rgba(255,94,20,0.8) 99%, rgb(255,94,20) 100%);
+        background-image: -ms-linear-gradient( -51deg, rgba(235,18,10,0.8) 0%, rgba(245,57,15,0.8) 51%, rgba(255,94,20,0.8) 99%, rgb(255,94,20) 100%);
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.3s;
+        opacity: 0;
+        z-index: 9;
+    }
+}
+.footer-gallery-wrapper:hover .footer-gallery-img::before{opacity: 1;}
+.footer-gallery-wrapper:hover .footer-gallery-img img {
+	transform: scale(1.1);
+}
+.footer-gallery-icon{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: .3s;
+    opacity: 0;
+    z-index: 999;
+    & >a{
+        font-size: 20px;
+        color:$white;
+        border:2px solid $white;
+        height: 30px;
+        width:30px;
+        line-height: 28px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 50%;
+    }
+}
+.footer-gallery-wrapper:hover .footer-gallery-icon{
+    opacity: 1;
+}
+.footer-2 .footer-title {
+	font-size: 24px;
+	color: $black;
+}
+.footer-2 .footer-text p {
+	color: $body-text-color;
+}
+.footer-2 .footer-link ul li a {
+	color: $body-text-color;
+    border-bottom:1px solid $body-text-color;
+    transition: .3s;
+    &:hover{
+        border-color:$theme-color;
+        color:$theme-color;
+    }
+}
+.footer-bottom-border{
+    border-top: 2px solid #eeeeee;
+}
+.footer-bottom-border .copyright p {
+	color: $body-text-color;
+}

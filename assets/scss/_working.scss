@@ -1,0 +1,20 @@
+.working-area {
+	background-size: cover;
+	background-position: center center;
+}
+.working-img img {
+	backface-visibility: hidden;
+    transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
+}
+.working-wrapper:hover .working-img img{transform: translate3d(0,-10px,0);}
+.working-text{
+    & h3{
+        font-size: 24px;
+        margin-top: 34px;
+        margin-bottom: 18px;
+    }
+    & p{
+        margin-bottom: 0;
+        padding: 0 60px;
+    }
+}

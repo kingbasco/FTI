@@ -1,0 +1,30 @@
+// Font Family
+$roboto: 'Roboto', ;
+$poppins: 'Poppins', ;
+
+// Colors ---------------
+$white: #ffffff; 
+$black: #282828;
+$black-soft: #333333;
+$red: #e25a44;
+$blue: #1e2c8a;
+$blue-soft: #11202d;
+$grey:#f9f9f9;
+$grey-soft:#ededed;
+$green:#03b664;
+$theme-color: #0B6607;
+$body-text-color: #9b9b9b;
+$hr-border-color:#eceff8;
+
+// Heading Color
+$heading-color: #404040; 
+
+
+
+// Responsive Variables
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+

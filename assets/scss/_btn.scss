@@ -1,0 +1,44 @@
+.btn {
+	color: $white;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1;
+	padding: 26px 54px 26px 50px;
+	position: relative;
+	text-transform: uppercase;
+	transition: 0.3s;
+    background-image: -moz-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+    background-image: -webkit-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+    background-image: -ms-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+	border-radius: 50px;
+	border: none;
+	transition: .3s;
+	& i{
+		font-size: 16px;
+		position: relative;
+		left:6px;
+	}
+}
+.btn:hover{
+	color:$white;
+	transform: translateY(-10px);
+}
+.blue-btn{background: $blue;}
+.white-btn{
+	background: $white;
+	color:$theme-color;
+	transition: .3s;
+}
+.green-btn{
+	background-image: -moz-linear-gradient( -51deg, rgb(0,198,251) 0%, rgb(0,91,234) 99%);
+	background-image: -webkit-linear-gradient( -51deg, rgb(0,198,251) 0%, rgb(0,91,234) 99%);
+	background-image: -ms-linear-gradient( -51deg, rgb(0,198,251) 0%, rgb(0,91,234) 99%);
+}
+.margon-btn{
+	background-image: -moz-linear-gradient( -51deg, rgb(204,32,142) 0%, rgb(103,19,210) 99%);
+	background-image: -webkit-linear-gradient( -51deg, rgb(204,32,142) 0%, rgb(103,19,210) 99%);
+	background-image: -ms-linear-gradient( -51deg, rgb(204,32,142) 0%, rgb(103,19,210) 99%);
+}
+
+  

@@ -1,0 +1,61 @@
+/* 9. counter */
+.counter-area {
+	background-position: center center;
+	background-size: cover;
+}
+.counter-padding{
+    padding-top: 350px;
+}
+.counter-wrapper{
+    overflow: hidden;
+}
+.counter-icon{
+    & i{
+        font-size: 80px;
+        color:$theme-color;
+        line-height: 1;
+    }
+}
+.counter-text{
+    margin-bottom: 36px;
+    & h1{
+        color:$white;
+        font-size: 45px;
+        line-height: 1;
+        margin-top: 25px;
+        & > span{
+            font-size: 30px;
+            font-weight: 600;
+            color: $theme-color;
+            position: relative;
+            top: -27px;
+            left: -4px;
+            color: $theme-color;
+        }
+    }
+    & span{
+        color:$white;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+.counter-wrapper .progress {
+	border-radius: 0;
+	height: 7px;
+	overflow: visible;
+	background: #fff;
+}
+.counter-wrapper .progress-bar {
+	background-image: -moz-linear-gradient( 0deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+    background-image: -ms-linear-gradient( 0deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+	text-align: right;
+	border-radius: 0 30px 30px 0;
+}
+// counter-white
+.counter-white .counter-text h1 {
+	color: $black;
+}
+.counter-white .counter-wrapper .progress {
+    background: #e4e4e4;
+}

@@ -1,0 +1,98 @@
+.skills-bg-img {
+	background-size: cover;
+	height: 100%;
+	right: 0;
+	position: absolute;
+	top: 0;
+	width: 50%;
+	background-position: center center;
+}
+.skills-wrapper {
+	padding: 97px 199px 100px 201px;
+}
+.progress-bar-text {
+    overflow: hidden; }
+  
+  .bar-title h4 {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 17px;
+    font-weight: 700;
+ }
+  
+  .progress-bar span {
+    font-size: 18px;
+    margin-top: -52px;
+    color: #1e283c;
+    font-weight: 700; }
+  
+  .progress-bar {
+    background-color: $theme-color;
+    text-align: right; }
+  
+  .progress {
+    border-radius: 0;
+    height: 5px;
+    overflow: visible;
+    background: #e0e0e0;
+   }
+
+  //  our-skills
+  .our-skills-area {
+    background-size: cover;
+    background-position: center center;
+  }
+  .our-skills-text{
+    & p{
+      color:$white;
+      margin-right: 98px;
+      margin-bottom: 40px;
+    }
+  }
+  .our-skills-text a.white-btn{color:$theme-color;}
+  .progress-circular input {
+	font-size: 51px !important;
+  font-weight: 700;
+  line-height: 1;
+}
+.our-skills-content{
+  & h3{
+    color:$white;
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 21px;
+  }
+}
+// skills-02
+.skills-single-wrapper {
+	overflow: hidden;
+	margin-right: 100px;
+}
+.skills-single-wrapper .progress {
+	height: 7px;
+	background: #ffebe2;
+}
+.skills-single-wrapper .progress-bar {
+  background-image: -moz-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+  background-image: -webkit-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+  background-image: -ms-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+	text-align: right;
+}
+.skills-02-area{
+    background-image: -moz-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+    background-image: -webkit-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+    background-image: -ms-linear-gradient( -51deg, rgb(235,18,10) 0%, rgb(255,94,20) 99%);
+  
+}
+.skills-2 .progress-bar span {
+	color: $white;
+}
+.skills-2 .progress-bar {
+	background-color: $white;
+}
+.skills-2 .bar-title h4 {
+	color:$white;
+}
+.skills-2 .progress {
+	background: #fb7141;
+}
