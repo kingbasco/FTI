@@ -400,66 +400,64 @@ $('.testimonial-02-active').slick({
 	// WOW active
 	new WOW().init();
 	
-		// map
+// Initialize and add the map
 function basicmap() {
-	// Basic options for a simple Google Map
-	// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+	// Map options
 	var mapOptions = {
-		// How zoomed in you want the map to start at (always required)
-		zoom: 11,
+		zoom: 5,
 		scrollwheel: false,
-		// The latitude and longitude to center the map (always required)
-		center: new google.maps.LatLng(40.6700, -73.9400), // New York
-		// This is where you would paste any style found on Snazzy Maps.
+		center: new google.maps.LatLng(51.2538, -85.3232), // Ontario, Canada
 		styles: [{ "featureType": "all", "elementType": "geometry.fill", "stylers": [{ "weight": "2.00" }] }, { "featureType": "all", "elementType": "geometry.stroke", "stylers": [{ "color": "#9c9c9c" }] }, { "featureType": "all", "elementType": "labels.text", "stylers": [{ "visibility": "on" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2" }] }, { "featureType": "landscape", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "landscape.man_made", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": 45 }] }, { "featureType": "road", "elementType": "geometry.fill", "stylers": [{ "color": "#eeeeee" }] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [{ "color": "#7b7b7b" }] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#46bcec" }, { "visibility": "on" }] }, { "featureType": "water", "elementType": "geometry.fill", "stylers": [{ "color": "#c8d7d4" }] }, { "featureType": "water", "elementType": "labels.text.fill", "stylers": [{ "color": "#070707" }] }, { "featureType": "water", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff" }] }]
 	};
+
 	// Get the HTML DOM element that will contain your map
-	// We are using a div with id="map" seen below in the <body>
 	var mapElement = document.getElementById('contact-map');
 
-	// Create the Google Map using our element and options defined above
+	// Create the Google Map using the element and options defined above
 	var map = new google.maps.Map(mapElement, mapOptions);
 
-	// Let's also add a marker while we're at it
+	// Add a marker at the center of the map
 	var marker = new google.maps.Marker({
-		position: new google.maps.LatLng(40.6700, -73.9400),
+		position: new google.maps.LatLng(51.2538, -85.3232),
 		map: map,
-		title: 'Cryptox'
+		title: 'Ontario, Canada'
 	});
 }
+
+// Load the map when the window loads
 if ($('#contact-map').length != 0) {
 	google.maps.event.addDomListener(window, 'load', basicmap);
 }
 
-
-	if (typeof ($.fn.knob) != 'undefined') {
-		$('.knob').each(function () {
-		  var $this = $(this),
+// Initialize the knob plugin if available
+if (typeof ($.fn.knob) != 'undefined') {
+	$('.knob').each(function () {
+		var $this = $(this),
 			knobVal = $this.attr('data-rel');
-	
-		  $this.knob({
+
+		$this.knob({
 			'draw': function () {
-			  $(this.i).val(this.cv + '%')
+				$(this.i).val(this.cv + '%')
 			}
-		  });
-	
-		  $this.appear(function () {
+		});
+
+		$this.appear(function () {
 			$({
-			  value: 0
+				value: 0
 			}).animate({
-			  value: knobVal
+				value: knobVal
 			}, {
-			  duration: 2000,
-			  easing: 'swing',
-			  step: function () {
-				$this.val(Math.ceil(this.value)).trigger('change');
-			  }
+				duration: 2000,
+				easing: 'swing',
+				step: function () {
+					$this.val(Math.ceil(this.value)).trigger('change');
+				}
 			});
-		  }, {
+		}, {
 			accX: 0,
 			accY: -150
-		  });
 		});
-	  }
+	});
+}
 	
 	})(jQuery);
